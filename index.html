@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sarkari result</title>
+    <link rel="shortcut icon" href="sarkari_result_icon-removebg-preview.png" type="png-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width:100vw;
+            height: 100%;
+            background-color: beige;
+        }
+        .head{
+            width:990px;
+            height: 175px;
+            background-color: #AB183D;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        
+        }
+
+        
+      .logo img{
+        width:150px;
+        height: 149px;
+        margin: 15px;
+      }
+        .logo{
+        animation:name 4s linear 2s infinite;
+
+      }
+      @keyframes name{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+      }
+      .logo:hover{
+        animation-play-state: paused;
+      }
+ 
+      .head #head_title h1{
+        
+        color: white;
+        padding: 0px 180px 0px;
+        font-size: 49px;
+        font-weight: bold;
+    }
+    #nav{
+        margin: auto;
+        width:990px;
+        background-color: black;
+    }
+    #nav ul{
+        
+        display: flex;
+        justify-content: space-evenly;
+        }
+    #nav ul li{
+        list-style-type: none;
+        padding: 16px;
+         border-right:2px solid white ;
+        }
+       #nav ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: azure;
+        background-color: black;
+        margin-right: 15px;
+         }
+         .link ul{
+        text-align: center;
+        margin-top: 20px;
+         }
+      .link ul li{
+        display: inline-block;
+    }
+    .link ul li a{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }   
+   .marquee{
+    text-align: center;
+     margin-left: 0px;
+     
+    
+    }
+    /* #marquee ul{
+       
+        animation: name 1s linear 0.3s infinite alternate;
+        position: relative;
+        top:0px;
+        right:-800px;
+        
+    }
+    @keyframes name{
+        from{
+            top:0px;
+            left:0px;
+        }
+        to{
+            top:0px;
+            left:200px;
+        }
+    } */
+   
+
+   .marquee li{
+    list-style-type: none;
+    display: inline-block;
+
+   }
+   .marquee ul li a{
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all .2s linear
+     0.3s;
+
+ 
+   }
+   .marquee ul li a{
+    color:blue
+
+   }
+   
+   #title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+   }
+   #title a{
+
+    background-color: blue;
+    color:azure;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 0px 70px 20px 70px;
+    
+    text-decoration-color:aqua;
+
+    
+   }
+   .grid{
+    width:75%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:repeat (2,1fr);
+    grid-gap:5px ;
+    margin-left: 12%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: azure;
+    margin-top: 40px;
+    
+
+   }
+   .item{
+    text-align: center;
+    height: 69px;
+    
+    
+   }
+  /* .card{
+    width:75%;
+    height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 163px;
+  }
+  .card .link{
+    width:500px;
+    height: 200px;
+    border: 2px solid red;
+  } */
+  .post{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    width:75%;
+    height: 400px;
+    margin-left: 165px;
+    margin-top: 40px;
+
+  }
+  .post .link{
+    width:75%;
+    height: 400px;
+
+
+    text-align: center;
+  }
+  .post .link table tr td li{
+    padding: 10px;
+    
+  }
+  .post .link table th{ 
+    background-color: #AB183D;
+    width:400px;
+    padding: 10px;
+  }
+  .post .link table{
+    border: 2px solid orangered;
+  }
+  .twitter span a{
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    
+    
+  }
+  .twitter span{
+    padding: 7px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+
+
+  }
+  .twitter{
+    margin-left: 41%;
+    margin-top: 50px;
+  }
+  
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <!-- <div class="image"> -->
+                    <img src="sarkari_result_icon-removebg-preview.png" alt="sarkari result"/>
+                    <!-- </div> -->
+                </div>
+                <div id="head_title">
+                    
+                  <h1>SARKARI RESULT</h1>  
+                 <b style="padding-left: 260px;font-size:18px;color: white;font-weight: bold;"> WWW.SARKARIRESULT.COM</b> 
+            </div>
+            </div>
+        </header>
+        <div id="nav">
+            <ul>
+                <li><a href="#" style="padding-left: 10px;">Home</a></li>
+                <li><a href="#">Latest Jobs</a></li>
+                <li><a href="#"> Results</a></li>
+                <li><a href="#">Admit Card</a></li>
+                <li><a href="#">Latest Jobs</a></li>
+                <li><a href="#">Answer Key</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li  style="border-right: none;"><a href="#">Search</a></li>
+                </ul>
+        </div>
+        <b>
+            <h1 style="text-align: center;font-size: 1.3rem;margin-top: 40px;">
+                Sarkari Result : SarkariResult.Com Sarkari Naukri Latest Jobs Online
+                Form at Sarkari Result 2024
+            </h1>
+        </b>
+        
+        <div style="color:red;margin-top: 25px;text-align: center;">
+        <span>
+            <b>Welcome to No. 1 Education Portal Sarkari Result 2024</b>
+        </span>
+        </div>
+
+        <div class="link">
+            <ul>
+               <li ><a href="#">Sarkari Result Android </a>||</li>
+               <li><a href="#">Sarkari Result Youtube Channel</a>||</li>
+               <li><a href="#">Sarkari Result Apple / IOS Apps</a>||</li>
+               <li><a href="#">Follow Instagram</a></li>
+            </ul>
+        </div>
+        <div class="marquee">
+            <ul>
+               <marquee  scrollamount="12"direction="right" width="74%">
+                 
+                 <li><a href="#">NTA JEEMAIN Session II Online Form 2024 </a>&nbsp;| |</li>
+            
+                <li><a href="https://www.sarkariresult.com/2024/aiims-norcet-6th/">CTET January 2024 Result with Score Card</a> &nbsp;| | </li>
+                <li><a href="https://www.sarkariresult.com/2024/nta-jeemain-jan24/">NTA CUET UG 2024 Online Form</a> || </li>
+        
+            </marquee>
+            </ul>
+            
+        </div>
+        <div class="marquee">
+            <ul>
+               <marquee  behaviour="alternate" scrolldelay="10" scrollamount="7"direction="left" width="74%">
+                 
+                 <li><a href="#">AIIMS NORCET 6th Online Form 2024</a>&nbsp;| |</li>
+            
+                <li><a href="https://www.sarkariresult.com/2024/aiims-norcet-6th/">UPSSSC PET 2023 Certificate</a> &nbsp;| | </li>
+                <li><a href="https://www.sarkariresult.com/2024/nta-jeemain-jan24/">NTA CUET UG 2024 Online Form</a> || </li>
+        
+            </marquee>
+            </ul>
+            
+        </div>
+        <div class="marquee">
+            <ul>
+               <marquee  scrollamount="10"direction="right" width="74%">
+                 
+                 <li><a href="#">RPSC Senior Teacher Online Form 2024 </a>&nbsp;| |</li>
+            
+                <li><a href="https://www.sarkariresult.com/2024/aiims-norcet-6th/">Mathura PVT Admissions Online Form 2024</a> &nbsp;| | </li>
+                <li><a href="https://www.sarkariresult.com/2024/nta-jeemain-jan24/">BHU SET Online Form 2024</a> || </li>
+        
+            </marquee>
+            </ul>
+            
+        </div>
+ 
+         <div class="twitter">
+            <span><i class="fa-brands fa-x-twitter"></i>
+                <a href="#">Follow @sarkari_result</a>
+
+         </div>
+         <div id="title">
+          
+            <a href="#"> Sarkari Result Tools</h1>
+            </a>
+          
+        </div>
+        
+        <div class="grid">
+            <div class="item" style="  background-color: #868a08;
+            color:white;">DSSSB Various Post
+                <br> Apply Online</div>
+            <div class="item" style=" background-color: #0404b4;
+            color:white;">UPSC IAS IFS 2024
+                <br> Apply Online</div>
+            <div class="item" style=" background-color: #fb5e03;
+            color:white;">Army Agniveer 2024
+                <br>
+                Apply Online </div>
+            <div class="item" style=" background-color:#8c0101 ;
+            color: white;">SSS Selection Post  2024
+                <br> Apply Online</div>
+            <div class="item" style=" background-color: #fb0303;
+            color: white;">UPSSSC Various Post
+                <br> Apply Online 2024</div>
+            <div class="item" style="  background-color:#0b610b ;
+            color: white;">Coast Guard Navik
+                <br> Apply Online</div>
+            <div class="item" style=" background-color:#ff00bf ;
+            color: white;">CUTET UG 2024
+                <br> Apply Online</div>
+            <div class="item" style=" background-color: #0080ff;
+            color: white;">NEET UG 2024 
+                <br>Apply Online</div>
+          </div>
+          <!-- <div class="card">
+            <div class="link">A</div>
+            <div class="link">B</div>
+            <div class="link">C</div>
+          </div> -->
+          <div class="post">
+
+<div class="link">
+    <table>
+        <tr>
+            <th >Result</th>
+            <!-- <th>Admit Card
+
+            </th>
+            <th>Latest Jobs</th> -->
+        </tr>
+        <tr >
+            <td >
+                
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>  <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                
+                   
+            </td>
+        </tr>
+    </table>
+
+</div>
+    <div class="link">
+        <table>
+            <tr>
+                <th>Result</th>
+                <!-- <th>Admit Card
+    
+                </th>
+                <th>Latest Jobs</th> -->
+            </tr>
+            <tr >
+                <td >
+                    
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>  <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>  
+                
+                </td>
+            </tr>
+        </table>
+    </div>
+        <div class="link">
+            <table>
+                <tr>
+                     <h1><th>Result</th></h1>
+                    <!-- <th>Admit Card
+        
+                    </th>
+                    <th>Latest Jobs</th> -->
+                </tr>
+                <tr >
+                    <td>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>  <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                        <li><a href="https://www.sarkariresult.com/2023/nta-nhb-sho-dec23/" target="_blank">NTA National Horticulture Board Dy Direct and SHO Result 2024 </a></li>
+                    
+                    </td>
+                </tr>
+            </table>
+        </div>
+            
+</div>
+
+        </div>
+    
+</body>
+</html>
